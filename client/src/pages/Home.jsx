@@ -13,7 +13,7 @@ const Home = () => {
   }, []);
 
   const createRoom = async () => {
-    const res = await fetch(`${import.meta.env.BACKEND_URL}/api/room/create`, {
+    const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/room/create`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -31,7 +31,7 @@ const Home = () => {
   const joinRoom = async () => {
     if (!roomId) return;
 
-    const res = await fetch(`${import.meta.env.BACKEND_URL}/api/room/join`, {
+    const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/room/join`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -15,8 +15,8 @@ const Login = () => {
     if (!email || !password) return;
 
     const url = isSignup
-      ? `${import.meta.env.BACKEND_URL}/api/auth/signup`
-      : `${import.meta.env.BACKEND_URL}/api/auth/login`;
+      ? `${import.meta.env.VITE_BACKEND_URL}/api/auth/signup`
+      : `${import.meta.env.VITE_BACKEND_URL}/api/auth/login`;
 
     const body = isSignup
       ? { name, email, password }
