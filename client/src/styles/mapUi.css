@@ -1,0 +1,125 @@
+/* SIDEBAR */
+.sidebar {
+  width: 300px;
+  height: 100vh;
+  position: absolute;
+  z-index: 1000;
+  background: rgba(17, 17, 17, 0.95);
+  backdrop-filter: blur(10px);
+  color: white;
+  padding: 16px;
+  overflow-y: auto;
+  border-right: 1px solid rgba(255,255,255,0.08);
+}
+
+.sidebar-header h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.sidebar-section {
+  margin-top: 18px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.list-item {
+  font-size: 14px;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+/* INPUTS */
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: #1a1a1a;
+  color: white;
+  outline: none;
+}
+
+/* BUTTONS */
+.btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #1f1f1f;
+  color: white;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #2a2a2a;
+}
+
+.btn.primary {
+  background: #2563eb;
+  border: none;
+}
+
+.btn.primary:hover {
+  background: #1d4ed8;
+}
+
+/* MAP */
+.map-wrapper {
+  position: relative;
+}
+
+.map {
+  height: 100vh;
+  width: 100%;
+}
+
+/* FLOATING BUTTON */
+.floating-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 1000;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.7);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* POPUP */
+.danger-btn {
+  margin-top: 8px;
+  background: #ef4444;
+  border: none;
+  padding: 6px 10px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* USER MARKER */
+.user-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid white;
+}

@@ -1,0 +1,35 @@
+/* APP LAYOUT */
+.app-shell {
+  display: flex;
+  height: 100vh;
+  background: #0b0b0b;
+}
+
+/* SIDEBAR WIDTH CONSISTENCY */
+.sidebar {
+  width: 300px;
+}
+
+/* MAIN AREA */
+.app-main {
+  flex: 1;
+  margin-left: 300px;
+  height: 100vh;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    position: absolute;
+    height: 45vh;
+    bottom: 0;
+    z-index: 2000;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+
+  .app-main {
+    margin-left: 0;
+  }
+}
